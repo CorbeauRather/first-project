@@ -15,6 +15,7 @@
   justify-content: center;
   cursor: pointer;
   transition: color 0.3s;
+  text-decoration: none;
 }
 .button::before {
 content: '';
@@ -27,7 +28,7 @@ z-index: -1;
 transition: height 0.3s;
 }
 .button:hover{
-  color: #fff;
+  color: #ffffff;
 }
 .button:hover::before{
   height: 100%;
@@ -75,4 +76,41 @@ body {
 
 html {
   font-family: "Noto Sans", sans-serif;
+}
+*  {
+  font-family: "Noto Sans", sans-serif;
+}
+table{
+  border: 1px #000 solid;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.table-wrapper{
+display: flex;
+justify-content: center;
+}
+.form-group{
+margin-bottom: 24px;
+}
+input[type="text"],input[type="email"],textarea{
+  display: block;
+  width: 100%;
+  border-bottom: 1px #000 solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 4px 0;
+}
+textarea{
+  border: none;
+}
+label[for="name"],label[for="email"],label[for="Message"]{
+margin-bottom: 8px;
+display: block;
+}
+form{
+  margin-right: 48px;
+  padding: 48px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: 32px;
 }
