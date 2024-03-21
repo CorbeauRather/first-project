@@ -16,7 +16,6 @@
   cursor: pointer;
   transition: color 0.3s;
   text-decoration: none;
-  box-shadow: 0 0 3rem black;
 }
 .button::before {
 content: '';
@@ -30,6 +29,7 @@ transition: height 0.3s;
 }
 .button:hover{
   color: #ffffff;
+  box-shadow: 0 0 3rem black;
 }
 .button:hover::before{
   height: 100%;
